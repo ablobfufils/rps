@@ -2,23 +2,35 @@
 
 <html>
 <head>
-    <link rel ="stylesheet" href="style.css">
-    <link rel ="script" href="script.js">
+    <link rel ="stylesheet" href="style.css"/>
     <title>Donns' RPS</title>
 </head>
 
 <body>
 <h1>Donns' Rock Paper Scissors</h1>
 
-
+<form>
 <input type="button" id="rock" value="Rock">
 <input type="button" id="paper" value="Paper">
 <input type="button" id="scissors" value="Scissors">
-
+</form>
 <p id="scoringDefinition"> Record: (Wins/Losses/Ties) </p>
 <p id="scoringSystem">(0/0/0)</p>
 
 
 </body>
 
+<script>
+
+    
+function rps() {
+    let random = Math.random()
+    if (random < .3) { console.log("Rock") }
+    if (random > .3 && random < .6) { console.log("Paper") }
+    if (random > .6) { console.log("Scissors") }
+}
+
+
+
+</script>
 </html>
